@@ -6,7 +6,21 @@
 
     let incomingUrl = null;
 
-    onMount(() => {
+    onMount(async () => {
+        const get = await fetch("https://blocksum.org/faucet/status");
+        const res = await get.json()
+
+        state.update(current => {
+            return {
+                ...current,
+                faucetAddress: res.address,
+                unlocked: res.unlocked,
+                locked: res.locked,
+                total: res.total,
+                claimers: res.claimers,
+            }
+        })
+
         const search = location.search;
         const params = new URLSearchParams(search);
         incomingUrl = params.get('address');
@@ -18,7 +32,6 @@
 
 </script>
 
-<Status/>
 <main in:fade>
     <slot/>
 </main>

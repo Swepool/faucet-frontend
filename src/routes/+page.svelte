@@ -4,6 +4,7 @@
     import Step2 from "../components/Step2.svelte";
     import Step3 from "../components/Step3.svelte";
     import Response from "../components/Response.svelte";
+    import Status from "../components/Status.svelte";
 </script>
 
 <!-- THIS IS ALL WRAPPED IN +LAYOUT-->
@@ -17,5 +18,7 @@
         <Step3/>
     {:else if $state.step === 4}
         <Response/>
+    {:else if $state.step === 'info'}
+        <Status/>
     {/if}
 </div>
