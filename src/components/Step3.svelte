@@ -32,7 +32,7 @@
 <div in:fade>
     <h1>One more thing</h1>
     <p>Before you go, please consider following us on twitter and give us a star on github. Also, don't forget
-        to tell you friends about kryptokrona and hugin messenger.</p>
+        to tell your friends about kryptokrona and hugin messenger.</p>
 </div>
 <div in:fade class="socials-wrapper">
     <button on:click={() => goto('https://twitter.com/kryptokrona')}>Twitter</button>
