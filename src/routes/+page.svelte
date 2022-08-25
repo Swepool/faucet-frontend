@@ -9,7 +9,6 @@
 <!-- THIS IS ALL WRAPPED IN +LAYOUT-->
 
 <div class="card layered-shadow">
-
     {#if $state.step === 1}
         <Step1/>
     {:else if $state.step === 2}
@@ -17,8 +16,6 @@
     {:else if $state.step === 3}
         <Step3/>
     {:else if $state.step === 4}
-
         <Response/>
-
     {/if}
 </div>

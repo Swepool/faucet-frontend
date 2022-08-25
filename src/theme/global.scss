@@ -87,7 +87,8 @@ button {
 .card {
   width: 100%;
   max-width: 768px;
-  height: 400px;
+  min-height: 400px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -102,9 +103,6 @@ button {
     color: var(--text-color)
   }
 
-  @media screen and (max-width: 768px) {
-    height: auto;
-  }
 }
 
 .layered-shadow {
