@@ -4,7 +4,7 @@
     import {goto} from "$app/navigation";
 
     const claim = async () => {
-        const post = await fetch('http://localhost:8083/faucet', {
+        const post = await fetch('http://localhost:8084/faucet', {
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -19,8 +19,6 @@
         console.log()
         $state.response = res.message
         $state.sent = res.sent
-
-        $state.step = 4
 
     }
 

@@ -29,6 +29,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     transition: 200ms ease-in-out;
     gap: 1rem;
     width: 100%;

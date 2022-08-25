@@ -4,7 +4,7 @@
 
 
     onMount(async () => {
-        const get = await fetch("http://localhost:8083/status");
+        const get = await fetch("http://localhost:8084/status");
         const res = await get.json()
 
         state.update(current => {
