@@ -96,13 +96,12 @@ button {
   border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 2rem;
+}
 
-  p {
-    line-height: 150%;
-    font-family: "Roboto Mono", monospace;
-    color: var(--text-color)
-  }
-
+p {
+  line-height: 150%;
+  font-family: "Roboto Mono", monospace;
+  color: var(--text-color)
 }
 
 .layered-shadow {
