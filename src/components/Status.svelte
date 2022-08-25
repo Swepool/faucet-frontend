@@ -4,7 +4,7 @@
 
 
     onMount(async () => {
-        const get = await fetch("http://localhost:8084/status");
+        const get = await fetch("https://blocksum.org/faucet/status");
         const res = await get.json()
 
         state.update(current => {
@@ -17,6 +17,8 @@
                 claimers: res.claimers,
             }
         })
+
+        console.log(res)
     });
 
 </script>

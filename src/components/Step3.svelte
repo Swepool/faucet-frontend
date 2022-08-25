@@ -4,7 +4,7 @@
     import {goto} from "$app/navigation";
 
     const claim = async () => {
-        const post = await fetch('http://localhost:8084/faucet', {
+        const post = await fetch('https://blocksum.org/faucet/claim', {
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -20,6 +20,7 @@
         $state.response = res.message
         $state.sent = res.sent
 
+        console.log(res)
     }
 
     $: if ($state.response) {
